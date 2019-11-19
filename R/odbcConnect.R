@@ -33,7 +33,6 @@ odbcConnect <- function() {
 
   cat("\n----------------------------------------------------------------------------\n")
 
-  # Is this needed still?
-  #assign("con", con, envir = .GlobalEnv)
+  assign("con", con, envir = .GlobalEnv)
 
 }

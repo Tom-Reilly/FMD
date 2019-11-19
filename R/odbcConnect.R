@@ -1,4 +1,4 @@
-ODBCConnect <- function() {
+odbcConnect <- function() {
 
   cat("Connecting to FMD")
 

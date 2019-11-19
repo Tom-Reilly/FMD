@@ -32,7 +32,7 @@ odbcConnect <- function() {
     counter <- counter + 1
   }
   
-  if(con == "Microsoft SQL Server") assign("con", con, envir = .GlobalEnv)
+  if(is(con, "Microsoft SQL Server")) {assign("con", con, envir = .GlobalEnv)}
 
   cat("\n----------------------------------------------------------------------------\n")
 

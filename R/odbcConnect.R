@@ -22,6 +22,7 @@ odbcConnect <- function() {
         dsn = "FSS", # data source name
         uid = rstudioapi::askForPassword("Database User:"), # rofss
         pwd = rstudioapi::askForPassword("Database Password:")) # mssfss
+      assign("con", con, envir = .GlobalEnv)
       cat("Connection with FMD established")
       },
       error = function(e) {
@@ -32,7 +33,5 @@ odbcConnect <- function() {
   }
 
   cat("\n----------------------------------------------------------------------------\n")
-
-  assign("con", con, envir = .GlobalEnv)
 
 }

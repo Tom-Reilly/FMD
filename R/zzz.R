@@ -5,5 +5,5 @@
 #}
 
 .onLoad <- function(libname = find.package("FMD"), pkgname = "FMD") {
-odbcConnect(run=T)
+odbcConnect(run=TRUE)
 }

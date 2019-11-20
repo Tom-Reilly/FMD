@@ -4,6 +4,6 @@
 #  if(is_attached(pkg)) {action}
 #}
 
-.onLoad <- function(libname = find.package("FMD"), pkgname = "FMD") {
+.onAttach <- function(libname = find.package("FMD"), pkgname = "FMD") {
 odbcConnect()
 }

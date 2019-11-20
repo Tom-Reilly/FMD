@@ -31,6 +31,8 @@ odbcConnect <- function() {
     counter <- counter + 1
   }
   
+  assign("con", con, envir = .GlobalEnv)
+  
   cat("\n----------------------------------------------------------------------------\n")
 
 }

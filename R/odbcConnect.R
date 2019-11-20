@@ -20,8 +20,8 @@ odbcConnect <- function() {
       {con = DBI::dbConnect(
         drv = odbc::odbc(),
         dsn = "FSS", # data source name
-        uid = rstudioapi::askForPassword("Database User:"), # rofss
-        pwd = rstudioapi::askForPassword("Database Password:")) # mssfss
+        uid = askpass("Database User:"), # rofss
+        pwd = askpass("Database Password:")) # mssfss
       assign("con", con, envir = .GlobalEnv)
       cat("Connection with FMD established")
       },

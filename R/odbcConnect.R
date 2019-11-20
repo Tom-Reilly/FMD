@@ -1,5 +1,5 @@
-odbcConnect <- function(run=F) {
-if(run==T) {
+odbcConnect <- function(run=FALSE) {
+if(run==TRUE) {
   cat("Connecting to FMD")
 
   cat("\n----------------------------------------------------------------------------\n")

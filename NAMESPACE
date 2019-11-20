@@ -1,3 +1,4 @@
+export(odbcConnect)
 importFrom('DBI',dbConnect)
 importFrom('odbc',odbc)
 importFrom("methods", is)

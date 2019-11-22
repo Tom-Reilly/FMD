@@ -1,4 +1,4 @@
-export(odbcConnect)
+export(odbcConnect, openUI)
 importFrom('DBI',dbConnect)
 importFrom('odbc',odbc)
 importFrom("askpass", askpass)
